@@ -27,3 +27,10 @@ My task for this project was to implement an *end-to-end pipeline* that could ta
 * To run the pipeline, simply run the first cell in the `HAR.ipynb` notebook - this will import the necessary libraries.
 * Next, skip all cells under the heading *"Exploring the Task"* and run the cells under the heading *"Creating a Pipeline"*. 
 * The predictions for the test data will be stored in the working directory under the filename `predictions.csv`.
+
+### Pipeline Performance
+* **LDA**: Predictions are obtained in less than 10 seconds on my PC as well as Google Colaboratory.
+* **XGBoostClassifier**: Predictions are obtained in about 30 seconds on my PC (using GPU) and 1.5 minutes (using CPU). It takes about 4 minutes to run the pipeline on Google Colaboratory.
+
+### Troubleshooting
+If you are getting an error message then try removing the `tree_method = "gpu_hist"` parameter from the `XGBClassifier` model. This is used to speed up the training process using GPU resources. Other than that, the code should run fine on most systems.
