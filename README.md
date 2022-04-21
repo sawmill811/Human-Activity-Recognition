@@ -23,7 +23,7 @@ My task for this project was to implement an *end-to-end pipeline* that could ta
 * **Evaluation**: The model is evaluated on the test data and predictions are stored in the working directory under the filename `predictions.csv`. *Accuracy* on the test dataset along with a *classification report* containing different metrics is printed.
 
 ## Instructions for running the notebook
-* Use `git clone https://github.com/sawmill811/Human-Activity-Recognition.git` in your terminal to clone the repository. If you wish to run the file on **Google Colaboratory**, then here is the [link to the notebook](https://colab.research.google.com/drive/1dnAv40BMAZ53bWtzlCPx8seq6C_Q2K2F?usp=sharing).
+* Use `git clone https://github.com/sawmill811/Human-Activity-Recognition.git` in your terminal to clone the repository. If you wish to run the file on **Google Colaboratory**, then here is the [link to the notebook](https://colab.research.google.com/drive/1464aVNiNmM0TX_o2jsA4KFv9dfbzTkY4?usp=sharing).
 * To run the pipeline, simply run the first cell in the `HAR.ipynb` notebook - this will import the necessary libraries.
 * Next, skip all cells under the heading *"Exploring the Task"* and run the cells under the heading *"Creating a Pipeline"*. 
 * The predictions for the test data will be stored in the working directory under the filename `predictions.csv`.
