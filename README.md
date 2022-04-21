@@ -18,7 +18,7 @@ The obtained dataset has been randomly partitioned into two sets, where 70% of t
 ## Pipeline
 My task for this project was to implement an *end-to-end pipeline* that could take the dataset and output predictions for the test data along with some metrics to evaluate its performance. The pipeline consists of the following components:<br>
 * **Importing Data**: Train and Test datasets can be input either as *URLs (relative or absolute)* or as `Pandas DataFrames`.
-* **Preprocessing**: NULL values are removed from the dataset and the features are scaled using the *Scaler* chosen by the user `(StandardScaler/MinMaxScaler/MaxAbsScaler)`. The column containing subject IDs is removed since it is not required for the prediction.
+* **Preprocessing**: NULL values are removed from the dataset and the features are scaled using the *Scaler* chosen by the user `(StandardScaler/MinMaxScaler/MaxAbsScaler)`. The column containing subject IDs is removed since it is not required for making predictions.
 * **Training the Model**: Using the model parameters I found while exploring the task, the model is trained on the training data. I found `LinearDiscriminantAnalysis` and `XGBoostClassifier` to be the best performing models for this task, hence I have given the user the option to choose either one of these models.
 * **Evaluation**: The model is evaluated on the test data and predictions are stored in the working directory under the filename `predictions.csv`. *Accuracy* on the test dataset along with a *classification report* containing different metrics is printed.
 
